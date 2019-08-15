@@ -7,6 +7,7 @@ gem 'letter_opener'
 gem 'figaro'
 gem 'dotenv'
 gem 'stripe'
+gem 'rails_db', '2.0.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
