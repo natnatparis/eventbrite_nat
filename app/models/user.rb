@@ -1,5 +1,11 @@
 class User < ApplicationRecord
-   # Validations
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
+  
+  devise :database_authenticatable, :registerable, :confirmable, :recoverable, stretches: 12 
+  # Validations
     validates :first_name, presence: true  
     validates :last_name, presence: true 
     validates :uid, uniqueness: true
