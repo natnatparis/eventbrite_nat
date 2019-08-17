@@ -1,6 +1,6 @@
 class Event < ApplicationRecord
 # validation d'attribut
-v    has_many :attendances
+has_many :attendances
 has_many :users, through: :attendances
 belongs_to :administrator, class_name: "User"
 validates :start_date, presence: true, if: :not_in_the_past?
