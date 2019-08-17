@@ -1,10 +1,44 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<h1>bienvenue sur la page d'accueil</h1>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+
+    <!-- As a link -->
+    <nav class="navbar navbar-light bg-light">
+    <a class="eventbrite nat" href="#">Navbar</a>
+    <%= link_to "Sign in", new_user_session_path %> 
+    <%= link_to "See all events", events_path %> 
+    <%= link_to "participate", attendances_path %> 
+    <%= link_to "Community", users_path %> 
+    </nav>
+
+    <div class="alert alert-success" role="alert">
+    <h1 class="alert-heading">Welcome page!</h1>
+    <h1>Enjoy all events, subscribe to participate with us, nat</h1>
+    <p>Sign in here <%= link_to "new user", new_user_session_path %>  </p>
+    <p>
+    <p class="mb-0"><!--Hey--> <!--<%= @user %>--><!-- "welcome aboard!"--> </p>
+    </div>
+
+    <!--<h1>Welcome page </h1>
+    <h1>Enjoy all events, subscribe to participate with us, nat</h1>
+    <p>Sign in here <%= link_to "new user", new_user_session_path %>  </p>
+    <p>-->
+
+<h1>Hey <!--<%= @user %>--> welcome aboard!</h1>
+Find me in app/views/home/index.html.erb</p>
 <p>
-<%= link_to "Se connecter", new_user_session_path %> 
+<!--<%= link_to "Se connecter", new_user_session_path %> 
 </p>
 
 <p>
@@ -18,3 +52,110 @@
 <p>
 <%= link_to "la communauté", users_path %> 
 </p>
+-->
+<div class="row">
+<div class="card" style="width: 20rem;">
+  <img src="https://images.pexels.com/photos/1415557/pexels-photo-1415557.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="wonderful">
+  <div class="card-body">
+    <h5 class="card-title">Party</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="https://images.pexels.com/photos/863977/pexels-photo-863977.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="enjoy">
+  <div class="card-body">
+    <h5 class="card-title">Sport</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="https://images.pexels.com/photos/461593/pexels-photo-461593.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="sport">
+  <div class="card-body">
+    <h5 class="card-title">Adventure</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="https://images.pexels.com/photos/1449791/pexels-photo-1449791.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="party">
+  <div class="card-body">
+    <h5 class="card-title">Travel</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+</div>
+</div>
+
+<div class="card-columns">
+  <div class="card">
+    <img src="https://images.pexels.com/photos/1071878/pexels-photo-1071878.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="events">
+    <div class="card-body">
+      <h5 class="card-title">Marvellous adventures to live</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+  </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <img src="https://images.pexels.com/photos/226737/pexels-photo-226737.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="events ">
+    <div class="card-body">
+      <h5 class="card-title">I am loving it</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card bg-primary text-white text-center p-3">
+    <blockquote class="blockquote mb-0">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+      <footer class="blockquote-footer text-white">
+        <small>
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">This is the place I want to be</h5>
+      <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://www.pexels.com/fr-fr/photo/adulte-aliments-amis-amitie-415318/" class="card-img-top" alt="events">
+  </div>
+  <div class="card p-3 text-right">
+    <blockquote class="blockquote mb-0">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">This is great</h5>
+      <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+<p>Sign in here <%= link_to "new user", new_user_session_path %>  </p>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

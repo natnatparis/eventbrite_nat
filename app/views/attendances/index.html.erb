@@ -1,3 +1,13 @@
+<!--cdn css bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- As a link -->
+<nav class="navbar navbar-light bg-light">
+    <a class="eventbrite nat" href="#">Navbar</a>
+    <%= link_to "Sign in", new_user_session_path %> 
+    <%= link_to "See all events", events_path %> 
+    <%= link_to "participate", attendances_path %> 
+    <%= link_to "Community", users_path %> 
+</nav>
 <p id="notice"><%= notice %></p>
 
 <h1>Attendances</h1>
